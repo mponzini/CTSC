@@ -1,10 +1,10 @@
 ---
-title: "CTSC Template Short Vignette"
+title: "CTSC Template Vignette"
 author: "Matt Ponzini"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{CTSC Template Short Vignette}
+  %\VignetteIndexEntry{CTSC Template Vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 # Introduction  
 
-The CTSC Template Short provides a skeleton for project documentation and report generation. The template should make it easier to follow reproducible research guidelines and standardize the output for CTSC projects conducted using RStudio.  
+The CTSC Template provides a skeleton for project documentation and report generation. The template should make it easier to follow reproducible research guidelines and standardize the output for CTSC projects conducted using RStudio.  
 
 # Example  
 
@@ -97,7 +97,7 @@ The `asis` chunk is a special chunk that will allow text to be shown conditional
 <br>
 
 ```{asis, echo=internal}
-Generic chunk to include additional notes/doucemtnation that you do not want to
+Generic chunk to include additional notes/documentation that you do not want to
 send to the client.
 ```
 
