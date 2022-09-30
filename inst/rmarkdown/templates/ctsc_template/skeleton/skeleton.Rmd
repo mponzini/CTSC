@@ -31,8 +31,10 @@ h3 { /* Header 3 */
   font-weight: bold;
 }
 
-p { 
-   text-indent: 30px;
+h3.subtitle { /* Header 3 Subtitle */
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 150%;
 }
 
 </style>
@@ -52,7 +54,7 @@ knit_engines$set(asis = function(options) {
 })
   
 
-internal <- FALSE
+internal <- TRUE
 ```
 
 
@@ -69,7 +71,7 @@ send to the client.
 ```
 
 
-**STUDY DESCRIPTION/OBJECTIVE**
+# STUDY DESCRIPTION/OBJECTIVE
 
 This study...
 
@@ -80,7 +82,14 @@ This study...
 *Aim 3*:
 
 
-**DATA PROCESSING**
+# DATA PROCESSING
+
+```{r data-import, include=internal}
+# if data import file(s) is (are) large, consider caching the data
+#   see https://bookdown.org/yihui/rmarkdown-cookbook/cache.html for more 
+#   information
+
+```
 
 ```{r data-processing, include=internal}
 
@@ -92,9 +101,15 @@ send to the client.
 ```
 
 
-**STATISTICAL ANALYSIS**
+# STATISTICAL ANALYSIS
 
 ```{r data-analysis, include=internal}
+# if analysis is computationally intensive there are a few options.
+#   1) run analysis and save all results to load here
+#   2) run analysis here and set chunk option cache=TRUE. A cached chunk will
+#      automatically load output and objects from a previous run.
+#         see https://bookdown.org/yihui/rmarkdown-cookbook/cache.html for more 
+#         information
 
 ```
 
@@ -104,7 +119,9 @@ send to the client.
 ```
 
 
-**RESULTS**
+# RESULTS
+
+## Subsection  
 
 ```{asis, echo=internal}
 Generic chunk to include additional notes/documentation that you do not want to
