@@ -82,7 +82,7 @@ This study...
 
 **DATA PROCESSING**
 
-```{r data-processing}
+```{r data-processing, include=internal}
 
 ```
 
@@ -94,7 +94,7 @@ send to the client.
 
 **STATISTICAL ANALYSIS**
 
-```{r data-analysis}
+```{r data-analysis, include=internal}
 
 ```
 
