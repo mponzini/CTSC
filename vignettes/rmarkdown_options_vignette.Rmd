@@ -4,7 +4,7 @@ author: "Matt Ponzini"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{CTSC Template Vignette}
+  %\VignetteIndexEntry{Rmarkdown Options Vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
